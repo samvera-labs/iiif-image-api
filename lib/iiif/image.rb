@@ -17,5 +17,7 @@ module IIIF
     autoload_under 'services' do
       autoload :OptionDecoder
     end
+
+    class InvalidAttributeError < StandardError; end
   end
 end
