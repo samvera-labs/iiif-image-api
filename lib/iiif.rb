@@ -1,5 +1,3 @@
-require 'iiif/version'
-
+require 'iiif/image'
 module IIIF
-  require 'iiif/presentation'
 end

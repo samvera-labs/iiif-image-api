@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe IIIF do
+describe IIIF::Image do
   it 'has a version number' do
-    expect(IIIF::VERSION).not_to be nil
+    expect(IIIF::Image::VERSION).not_to be nil
   end
 end
