@@ -20,7 +20,7 @@ module IIIF::Image
       end
 
       def to_s
-        "pct:#{offset_x},#{offset_y},#{width},#{height}"
+        "#{offset_x},#{offset_y},#{width},#{height}"
       end
     end
   end
