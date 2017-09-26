@@ -52,7 +52,7 @@ module IIIF::Image
       if region.nil? || region == 'full'
         Region::Full.new
       elsif md = /^pct:(\d+(?:.\d+)?),(\d+(?:.\d+)?),(\d+(?:.\d+)?),(\d+(?:.\d+)?)$/.match(region)
-        Region::Percentage
+        Region::Percent
           .new(md[1].to_f, md[2].to_f, md[3].to_f, md[4].to_f)
       elsif md = /^(\d+),(\d+),(\d+),(\d+)$/.match(region)
         Region::Absolute.new(md[1].to_i, md[2].to_i, md[3].to_i, md[4].to_i)
