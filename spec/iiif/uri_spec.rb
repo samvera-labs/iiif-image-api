@@ -11,7 +11,6 @@ RSpec.describe IIIF::Image::URI do
     subject { instance.to_s }
     let(:base_uri) { 'https://imageserver.example.com/cantaloupe/iiif/2/' }
     let(:identifier) { 'st%2F808%2Fxq%2F5141%2Fst808xq5141_00_0001.jp2' }
-    let(:transformation) { IIIF::Image::Transformation.new(size: 'full', region: 'full') }
 
     context "with a transformation" do
       let(:instance) do
