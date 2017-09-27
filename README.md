@@ -1,4 +1,7 @@
-# IIIF
+# Ruby IIIF Image API
+
+[![Build Status](https://travis-ci.org/jcoyne/iiif-image-api.svg?branch=master)](https://travis-ci.org/jcoyne/iiif-image-api)
+[![Coverage Status](https://coveralls.io/repos/github/jcoyne/iiif-image-api/badge.svg?branch=master)](https://coveralls.io/github/jcoyne/iiif-image-api?branch=master)
 
 ## Installation
 
@@ -25,4 +28,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/cbeer/iiif.
-
