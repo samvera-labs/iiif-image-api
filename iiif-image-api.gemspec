@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %(Ruby APIs for working with IIIF)
   spec.description   = %(Ruby APIs for working with IIIF)
-  spec.homepage      = 'https://github.com/jcoyne/iiif-image-api'
+  spec.homepage      = 'https://github.com/samvera-labs/iiif-image-api'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = 'exe'
