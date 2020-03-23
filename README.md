@@ -1,7 +1,8 @@
 # Ruby IIIF Image API
 
-[![Build Status](https://travis-ci.org/jcoyne/iiif-image-api.svg?branch=master)](https://travis-ci.org/jcoyne/iiif-image-api)
-[![Coverage Status](https://coveralls.io/repos/github/jcoyne/iiif-image-api/badge.svg?branch=master)](https://coveralls.io/github/jcoyne/iiif-image-api?branch=master)
+[![Build Status](https://travis-ci.org/samvera-labs/iiif-image-api.svg?branch=master)](https://travis-ci.org/samvera-labs/iiif-image-api)
+[![Coverage Status](https://coveralls.io/repos/github/samvera-labs/iiif-image-api/badge.svg?branch=master)](https://coveralls.io/github/samvera-labs/iiif-image-api?branch=master)
+[![Gem Version](https://badge.fury.io/rb/iiif-image-api.svg)](https://badge.fury.io/rb/iiif-image-api)
 
 ## Installation
 
@@ -27,4 +28,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/cbeer/iiif.
+Bug reports and pull requests are welcome on GitHub at https://github.com/samvera-labs/iiif.
