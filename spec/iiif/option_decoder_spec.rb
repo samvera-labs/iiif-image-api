@@ -6,9 +6,10 @@ RSpec.describe IIIF::Image::OptionDecoder do
     let(:size) { 'max' }
     let(:region) { 'full' }
     let(:rotation) { '0' }
+    let(:quality) { 'default' }
     let(:format) { 'jpg' }
     let(:options) do
-      { region: region, size: size, rotation: rotation, format: format }
+      { region: region, size: size, rotation: rotation, quality: quality, format: format }
     end
 
     describe 'of a full region' do
@@ -108,6 +109,20 @@ RSpec.describe IIIF::Image::OptionDecoder do
       let(:rotation) { '9.5' }
       it 'has correct parameters' do
         expect(subject.rotation).to eq 9.5
+      end
+    end
+
+    describe 'of a valid quality' do
+      let(:quality) { 'default' }
+      it 'raises an error' do
+        expect(subject.quality).to eq 'default'
+      end
+    end
+
+    describe 'of an invalid quality' do
+      let(:quality) { 'green' }
+      it 'raises an error' do
+        expect { subject }.to raise_error IIIF::Image::InvalidAttributeError
       end
     end
 
