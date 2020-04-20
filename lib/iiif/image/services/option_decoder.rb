@@ -4,6 +4,7 @@ module IIIF::Image
   # Decodes the URL parameters into a Transformation object
   class OptionDecoder
     OUTPUT_FORMATS = %w(jpg png).freeze
+    QUALITY_OPTIONS = %w(bitonal gray grey default color)
 
     # a helper method for instantiating the OptionDecoder
     # @param [ActiveSupport::HashWithIndifferentAccess] options
@@ -27,7 +28,7 @@ module IIIF::Image
     end
 
     def decode_quality(quality)
-      return quality if %w(bitonal grey default color).include?(quality)
+      return quality if QUALITY_OPTIONS.include?(quality)
       return 'default' if quality.nil?
       raise InvalidAttributeError, "Unsupported quality: #{quality}"
     end
