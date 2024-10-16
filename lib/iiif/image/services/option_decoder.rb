@@ -3,7 +3,7 @@
 module IIIF::Image
   # Decodes the URL parameters into a Transformation object
   class OptionDecoder
-    OUTPUT_FORMATS = %w(jpg png).freeze
+    OUTPUT_FORMATS = %w(webp jpg png).freeze
     QUALITY_OPTIONS = %w(bitonal gray grey default color)
 
     # a helper method for instantiating the OptionDecoder
